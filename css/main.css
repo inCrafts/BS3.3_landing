@@ -120,7 +120,14 @@ h2 {
 
 .btn-primary:hover .fa {
     transform: translateX(7px);
-    /*margin-left: 10px;*/
+}
+
+.btn-default.fa {
+    vertical-align: text-top;
+}
+
+.btn-default:hover .fa {
+    transform: translateY(5px);
 }
 
 .btn-default {
@@ -191,6 +198,79 @@ h2 {
     color: #9097a1;
 }
 
+.speakers .heading {
+    margin-top: 100px;
+    margin-bottom: 60px;
+}
+
+.speakers .heading h2 {
+    color: #6a7079;
+}
+
+
+/*    Persons styles    */
+.persons h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #777a7d;
+}
+
+.person__item .person {
+    position: relative;
+}
+
+.front {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    /*IE */
+    left: 50%;
+    margin-left: -70px;
+    cursor: pointer;
+}
+
+.back {
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    background-color: #6bd8d3;
+    opacity: 0;
+}
+
+.back i {
+    font-size: 40px;
+    line-height: 140px;
+    color: #ffffff;
+}
+
+.person__item .person:hover .front {
+    opacity: 0;
+}
+
+.person__item .person:hover .back {
+    opacity: 1;
+}
+
+.person__item .person:hover h3 {
+    color: #6bd8d3;
+}
+
+
+/*    Speakers register styles    */
+
+.speakers .register {
+    margin-top: 70px;
+}
+
+.speakers .register p {
+    /*max-width: 500px;*/
+}
+
+
+
 
 /*    Media styles    */
 
@@ -201,7 +281,17 @@ h2 {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-	
+    .speakers .heading, .speakers .register {
+        margin: 40px 0;
+    }
+
+    .speakers {
+        padding: 50px 0;
+    }
+
+    .lg ~ p {
+        margin-bottom: 30px;
+    }
 }
 
 /* Small Devices, Tablets */
