@@ -1,5 +1,9 @@
 /*    Common styles    */
 
+* {
+    scroll-behavior: smooth;
+}
+
 html, body {
     min-width: 320px;
     background: #ffffff;
@@ -126,9 +130,9 @@ h2 {
     vertical-align: text-top;
 }
 
-.btn-default:hover .fa {
-    transform: translate(3px, 3px);
-}
+/*.btn-default:hover .fa {*/
+/*    transform: translate(3px, 3px);*/
+/*}*/
 
 .btn-default {
     background: #6a7079;

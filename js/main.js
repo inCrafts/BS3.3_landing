@@ -18,4 +18,9 @@ $(function(){
         minimumResultsForSearch: Infinity
     });
 
+    new WOW({
+        mobile: false,
+        offset: 100
+    }).init();
+
 });
