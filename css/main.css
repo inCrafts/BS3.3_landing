@@ -424,14 +424,86 @@ li.select2-results__option:first-child {/*    Placeholder hide   */
     color: #2cc7c1;
 }
 
+/*    Sponsors section styles    */
+
+.sponsors {
+    padding: 65px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.sponsors-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*    Map section styles    */
+
+.map img {
+    width: 100%;
+}
+
+/*    Footer styles    */
+
+/*    Contacts section styles    */
+
+.contacts {
+    padding: 70px 0;
+    background-color: #525b64;
+}
+
+.contacts h3, .contacts h4 {
+    margin: 0 0 25px;
+    color: #ffffff;
+}
+
+.contacts h3 span {
+    font-weight: 700;
+}
+
+.contacts h3 {
+    font-size: 25px;
+}
+
+.contacts h4 {
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.social img:first-of-type {
+    margin-right: 20px;
+}
+
+.contacts p {
+    color: #cdd0d2;
+}
+
+.contact-details p {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    color: #2cc7c1;
+}
+
+.contact-details p i {
+    margin-right: 10px;
+}
+
+/*    Copyrights section styles    */
 
 
+.copyrights {
+    padding: 15px 0;
+    background-color: #3f464c;
+}
 
-
-
-
-
-
+.copyrights p {
+    margin: 0;
+    font-size: 14px;
+    letter-spacing: .14px;
+    color: #cacaca;
+}
 
 
 
@@ -456,6 +528,7 @@ li.select2-results__option:first-child {/*    Placeholder hide   */
     .lg ~ p {
         margin-bottom: 30px;
     }
+
     .tabs-wrap {
         margin-top: 20px;
     }
@@ -475,8 +548,32 @@ li.select2-results__option:first-child {/*    Placeholder hide   */
     .carousel {
         margin-top: 40px;
     }
-}
 
+    .sponsors {
+        padding: 20px 0 0;
+    }
+
+    .sponsors img {
+        margin-bottom: 20px;
+    }
+
+    .contacts {
+        padding: 30px 0;
+    }
+
+    .contacts h4 {
+        margin-top: 40px;
+    }
+
+    .contact-details p {
+        line-height: 20px;
+    }
+
+    .social img {
+        margin-top: 20px;
+    }
+
+}
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
     .carousel {
