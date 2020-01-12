@@ -126,9 +126,9 @@ h2 {
     vertical-align: text-top;
 }
 
-/*.btn-default:hover .fa {*/
-/*    transform: translateY(5px);*/
-/*}*/
+.btn-default:hover .fa {
+    transform: translate(3px, 3px);
+}
 
 .btn-default {
     background: #6a7079;
@@ -368,7 +368,6 @@ time {
 .form-control-feedback {
     right: 12px;
     line-height: 44px;
-
 }
 
 .has-success .form-control-feedback {
@@ -382,8 +381,52 @@ time {
     border: 2px solid #2cc7c1;
     background-color: #ffffff;
     box-shadow: none;
-
 }
+
+/*    Register form select styles    */
+
+.select2-container--default .select2-selection--single {/*    Select field stylisation, size, bg, horizontal align    */
+    height: 44px;
+    text-align: left;
+    background: #efefef;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {/*    Select field stylisation, vertical, color    */
+    line-height: 44px;
+    color: #bebebe;
+}
+
+.select2-container--open .select2-selection--single {/*    Open select field stylisation    */
+    background-color: #2cc7c1;
+    box-shadow: none;
+}
+
+.select2-container--open .select2-selection--single .select2-selection__rendered {/*    Open select field stylisation, color    */
+    color: #ffffff;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {/*    Arrow stylisation, color    */
+    top: 10px;
+    color: #1f8b87;
+}
+
+li.select2-results__option:first-child {/*    Placeholder hide   */
+    display: none;
+}
+
+.select2-results__options,
+.select2-container--default .select2-results__option--highlighted[aria-selected],
+.select2-container--default .select2-results__option[aria-selected="true"] {/*    Select open bg stylisation    */
+    background-color: #525b64;
+}
+
+.select2-results__options {/*    Options color   */
+    color: #2cc7c1;
+}
+
+
+
+
 
 
 
@@ -420,12 +463,28 @@ time {
     .carousel-inner .item img {
         width: 100%;
     }
+
+    .embed-responsive {
+        margin-bottom: 40px;
+    }
+
+    .register-form {
+        padding: 40px 0;
+    }
+
+    .carousel {
+        margin-top: 40px;
+    }
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
     .carousel {
         margin-top: 30px;
+    }
+
+    .register-form {
+        padding: 40px 0;
     }
 
 }
